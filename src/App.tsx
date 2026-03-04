@@ -22,6 +22,7 @@ function App() {
         {loading && <Loader onDone={() => setLoading(false)} />}
       </AnimatePresence>
 
+      {!loading && (
       <div className="font-['Outfit'] bg-white text-gray-800 overflow-x-hidden cursor-none">
       <CustomCursor />
       <Navbar />
@@ -35,6 +36,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
+      )}
     </>
   );
 }
