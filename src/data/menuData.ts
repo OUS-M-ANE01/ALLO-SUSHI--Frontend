@@ -7,7 +7,7 @@ export const menuItems: MenuItem[] = [
     name: 'Menu 1',
     description: '4 Roll Philadelphia · 4 Roll Ebi Fry · 4 Roll Classic',
     price: 7000,
-    image: 'https://images.unsplash.com/photo-1617196034096-2186592b2ca0?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&q=80',
     badge: '12 pièces',
     category: 'menus'
   },
@@ -25,7 +25,7 @@ export const menuItems: MenuItem[] = [
     name: 'Menu 3',
     description: '4 Shake Roll · 4 Avocat Crevette · 4 Natan',
     price: 10000,
-    image: 'https://images.unsplash.com/photo-1532803006695-64f26ea5f48e?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=500&q=80',
     badge: '12 pièces',
     category: 'menus'
   },
@@ -43,7 +43,7 @@ export const menuItems: MenuItem[] = [
     name: 'Menu 9',
     description: '4 Tokyo · 4 Naomi · 4 Tigre · 4 Crunchy Saumon · 6 Casablanca · 6 Aromaki',
     price: 22000,
-    image: 'https://images.unsplash.com/photo-1615361200141-f45040f367be?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1553621042-f6e147245754?w=500&q=80',
     badge: '28 pièces',
     category: 'menus'
   },
@@ -52,7 +52,7 @@ export const menuItems: MenuItem[] = [
     name: 'Menu 12',
     description: '6 Sashimi · 2 Nigiri · 4 Tokyo · 4 Alaska · 6 Aromaki · 6 Maki Avocat',
     price: 28500,
-    image: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&q=80',
     badge: '32 pièces',
     category: 'menus'
   },
@@ -62,7 +62,7 @@ export const menuItems: MenuItem[] = [
     name: 'Roll Classic',
     description: 'Avocat, surimi, concombre, mayo japonaise, masago',
     price: 3000,
-    image: 'https://images.unsplash.com/photo-1617196034094-f6e95d23c89d?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1559410545-0bdcd187e0a6?w=500&q=80',
     badge: '4 pièces',
     category: 'californias'
   },
@@ -71,7 +71,7 @@ export const menuItems: MenuItem[] = [
     name: 'Roll Saumon',
     description: 'Saumon, avocat, mayo japonaise, sésame',
     price: 4000,
-    image: 'https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1562802378-063ec186a863?w=500&q=80',
     badge: '4 pièces',
     category: 'californias'
   },
@@ -90,7 +90,7 @@ export const menuItems: MenuItem[] = [
     name: 'Maki Saumon',
     description: 'Saumon, riz, nori',
     price: 4000,
-    image: 'https://images.unsplash.com/photo-1617196034082-1f645e3bbafc?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500&q=80',
     badge: '6 pièces',
     category: 'makis'
   },
@@ -109,7 +109,7 @@ export const menuItems: MenuItem[] = [
     name: 'Nigiri Saumon',
     description: 'Tranche de saumon frais sur riz vinaigré',
     price: 4000,
-    image: 'https://images.unsplash.com/photo-1617196034181-4e9a8f0a3ea2?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80',
     badge: '2 pièces',
     category: 'nigiris'
   },
@@ -118,7 +118,7 @@ export const menuItems: MenuItem[] = [
     name: 'Sashimi Saumon',
     description: 'Tranches de saumon frais, sans riz',
     price: 5000,
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1534482421-64566f976cfa?w=500&q=80',
     badge: '4 pièces',
     category: 'nigiris'
   },
