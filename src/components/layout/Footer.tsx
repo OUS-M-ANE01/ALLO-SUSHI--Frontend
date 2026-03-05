@@ -77,7 +77,7 @@ export const Footer: React.FC = () => {
       </div>
 
       <div className="border-t border-white/8 pt-5.5 flex flex-col md:flex-row justify-between items-center gap-2.5 text-sm text-white/25">
-        <span>&copy; 2025 Alloo Sushi · Tous droits réservés</span>
+        <span>&copy; 2025 Alloo Sushi · by OUS_M_ANE. Tous droits réservés</span>
         <span>62 Rue Félix Faure, Plateau, Dakar, Sénégal</span>
       </div>
     </footer>

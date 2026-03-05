@@ -2,18 +2,23 @@ import React from 'react';
 import { SectionHeader } from '../ui/SectionHeader';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
-export const About: React.FC = () => {
+interface AboutProps {
+  onOpenTraiteur: () => void;
+  onOpenAbout: () => void;
+}
+
+export const About: React.FC<AboutProps> = ({ onOpenTraiteur, onOpenAbout }) => {
   const { ref, isVisible } = useScrollAnimation();
 
   const features = [
-    { icon: 'fa-fish', title: 'Produits Frais', desc: 'Sélectionnés chaque jour pour la meilleure qualité' },
+    { icon: 'fa-fish', title: 'Produits Frais', desc: "Sélectionnés chaque jour pour la meilleure qualité" },
     { icon: 'fa-motorcycle', title: 'Livraison Rapide', desc: '7j/7 dans toutes les zones de Dakar' },
-    { icon: 'fa-star', title: 'Fait à la Commande', desc: 'Jamais préparé à l\'avance, toujours frais' },
-    { icon: 'fa-concierge-bell', title: 'Service Traiteur', desc: 'Mariages, séminaires, soirées privées' }
+    { icon: 'fa-star', title: 'Fait à la Commande', desc: "Jamais préparé à l'avance, toujours frais" },
+    { icon: 'fa-concierge-bell', title: 'Service Traiteur', desc: 'Mariages, séminaires, soirées privées' },
   ];
 
   return (
-    <section className="bg-white py-16 md:py-25 px-4 sm:px-8 md:px-16" id="about">
+    <section className="bg-white py-16 md:py-25 px-4 sm:px-8 md:px-16 -mb-16" id="about">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
         <div 
           ref={ref}
@@ -64,6 +69,26 @@ export const About: React.FC = () => {
               </div>
             ))}
           </div>
+
+          {/* CTA Traiteur */}
+          <button
+            onClick={onOpenTraiteur}
+            className="mt-7 flex items-center gap-2.5 text-sm font-semibold text-red-600 border border-red-200 bg-red-50 px-5 py-3 rounded-full hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300"
+          >
+            <i className="fas fa-concierge-bell text-xs"></i>
+            Découvrir notre offre traiteur
+            <i className="fas fa-arrow-right text-xs"></i>
+          </button>
+
+          {/* CTA À Propos */}
+          <button
+            onClick={onOpenAbout}
+            className="mt-3 flex items-center gap-2.5 text-sm font-medium text-gray-500 px-5 py-3 rounded-full hover:text-red-600 transition-colors duration-300"
+          >
+            <i className="fas fa-circle-info text-xs"></i>
+            En savoir plus sur AllooSushi
+            <i className="fas fa-arrow-right text-xs"></i>
+          </button>
         </div>
       </div>
     </section>

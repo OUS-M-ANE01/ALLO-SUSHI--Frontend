@@ -130,6 +130,38 @@ export const Contact: React.FC = () => {
           </button>
         </div>
       </div>
+
+      {/* Google Maps */}
+      <div className={`mt-10 md:mt-14 rounded-2xl overflow-hidden border border-gray-200 transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-7'}`}>
+        <div className="bg-white border-b border-gray-200 px-6 py-4 flex items-center gap-3">
+          <div className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center">
+            <i className="fas fa-map-marker-alt text-red-600 text-sm"></i>
+          </div>
+          <div>
+            <div className="text-sm font-semibold text-gray-900">Alloo Sushi — Plateau, Dakar</div>
+            <div className="text-xs text-gray-500">62 Rue Félix Faure, à côté Hôtel Fleur de Lys</div>
+          </div>
+          <a
+            href="https://maps.google.com/?q=62+Rue+F%C3%A9lix+Faure+Dakar"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-auto text-xs text-red-600 font-medium hover:underline"
+          >
+            Ouvrir dans Maps →
+          </a>
+        </div>
+        <iframe
+          title="Alloo Sushi - Localisation"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.4!2d-17.4467!3d14.6928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b96de067%3A0x0!2s62+Rue+F%C3%A9lix+Faure%2C+Dakar!5e0!3m2!1sfr!2ssn!4v1"
+          width="100%"
+          height="340"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="block"
+        ></iframe>
+      </div>
     </section>
   );
 };

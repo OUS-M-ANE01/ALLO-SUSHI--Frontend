@@ -6,7 +6,11 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 type TabType = 'menus' | 'californias' | 'makis' | 'nigiris' | 'woks' | 'fastfood';
 
-export const Menu: React.FC = () => {
+interface MenuProps {
+  onOpenFullMenu: () => void;
+}
+
+export const Menu: React.FC<MenuProps> = ({ onOpenFullMenu }) => {
   const [activeTab, setActiveTab] = useState<TabType>('menus');
   const { ref, isVisible } = useScrollAnimation();
 
@@ -59,6 +63,19 @@ export const Menu: React.FC = () => {
             <Card item={item} />
           </div>
         ))}
+      </div>
+
+      {/* Bouton menu complet */}
+      <div className="mt-12 text-center">
+        <button
+          onClick={onOpenFullMenu}
+          className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-red-600/30 hover:shadow-xl"
+        >
+          <i className="fas fa-book-open text-white"></i>
+          Voir tout le menu complet
+          <i className="fas fa-arrow-right text-xs text-white"></i>
+        </button>
+        <p className="text-xs text-gray-400 mt-3">Plus de 40 références · Menus, Rolls, Makis, Woks &amp; plus</p>
       </div>
     </section>
   );
