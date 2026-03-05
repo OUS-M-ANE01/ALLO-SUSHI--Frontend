@@ -28,10 +28,6 @@ html {
   scroll-padding-top: 74px;
 }
 
-* {
-  cursor: none !important;
-}
-
 body {
   font-family: 'Outfit', sans-serif;
   background: var(--white);

@@ -68,7 +68,7 @@ export const Hero: React.FC = () => {
             <i className="fas fa-circle text-[6px]"></i> Livraison 7j/7 · Dakar
           </div>
           <h1 className="font-serif text-4xl sm:text-5xl leading-tight font-bold text-gray-900 mb-3 tracking-tight">
-            L'Art du<br /><span className="italic text-red-600">Sushi</span><br />à Dakar
+            L'Art du <span className="italic text-red-600">Sushi</span><br />à Dakar
           </h1>
           <p className="text-sm text-gray-600 max-w-xs leading-relaxed mb-5 font-light">
             Sushis, Thaï & Woks préparés à la commande. Livraison partout à Dakar.
@@ -83,17 +83,17 @@ export const Hero: React.FC = () => {
         <div className="flex mt-3">
           <motion.div
             className="flex-1 overflow-hidden h-[220px] sm:h-[280px]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.5 }}
+            initial={{ x: -80, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.5 }}
           >
             <img src="/g-alloo.png" alt="Sushi gauche" loading="eager" decoding="async" className="w-full h-full object-cover" />
           </motion.div>
           <motion.div
             className="flex-1 overflow-hidden h-[220px] sm:h-[280px]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.6 }}
+            initial={{ x: 80, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.5 }}
           >
             <img src="/d-alloo.png" alt="Sushi droite" loading="eager" decoding="async" className="w-full h-full object-cover" />
           </motion.div>

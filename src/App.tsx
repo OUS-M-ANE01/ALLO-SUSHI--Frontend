@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Loader } from './components/ui/Loader';
-import { CustomCursor } from './components/ui/CustomCursor';
 import { Navbar } from './components/layout/Navbar';
 import { InfoStrip } from './components/layout/InfoStrip';
 import { Footer } from './components/layout/Footer';
@@ -23,8 +22,7 @@ function App() {
       </AnimatePresence>
 
       {!loading && (
-      <div className="font-['Outfit'] bg-white text-gray-800 overflow-x-hidden cursor-none">
-      <CustomCursor />
+      <div className="font-['Outfit'] bg-white text-gray-800 overflow-x-hidden">
       <Navbar />
       <Hero />
       <InfoStrip />
