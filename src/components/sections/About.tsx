@@ -23,6 +23,8 @@ export const About: React.FC = () => {
             <img 
               src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=800&q=80" 
               alt="Chef"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </div>
@@ -30,6 +32,8 @@ export const About: React.FC = () => {
             <img 
               src="https://images.unsplash.com/photo-1562802378-063ec186a863?w=500&q=80" 
               alt="Rolls"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </div>

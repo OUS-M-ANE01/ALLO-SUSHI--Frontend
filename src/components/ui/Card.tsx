@@ -12,6 +12,8 @@ export const Card: React.FC<CardProps> = ({ item }) => {
         <img 
           src={item.image} 
           alt={item.name}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
         />
         {item.badge && (

@@ -17,6 +17,8 @@ export const Delivery: React.FC = () => {
           <img 
             src="/livraison.png" 
             alt="Livraison"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover"
           />
           <div className="absolute -bottom-4  bg-white rounded-2xl p-4 shadow-xl flex items-center gap-3">

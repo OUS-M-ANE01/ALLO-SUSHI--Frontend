@@ -52,6 +52,8 @@ export const Assortiments: React.FC = () => {
           <img 
             src="https://images.unsplash.com/photo-1559410545-0bdcd187e0a6?w=800&q=80" 
             alt="Assortiments"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>

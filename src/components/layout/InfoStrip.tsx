@@ -10,15 +10,20 @@ export const InfoStrip: React.FC = () => {
   ];
 
   return (
-    <div className="bg-gray-900 flex flex-wrap px-4 sm:px-8 md:px-16">
+    <div className="bg-gray-900 grid grid-cols-2 md:grid-cols-5">
       {items.map((item, index) => (
-        <div 
+        <div
           key={index}
-          className={`flex items-center gap-2 py-3 md:py-4 flex-1 min-w-[140px] justify-center text-white/75 text-xs md:text-sm ${index < items.length - 1 ? 'border-r border-white/8' : ''}`}
+          className={`flex items-center justify-center gap-2 py-3 md:py-4 text-white/75 text-xs md:text-sm border-white/8
+            ${index % 2 === 0 && index !== items.length - 1 ? 'border-r' : ''}
+            ${index < items.length - 2 ? 'border-b md:border-b-0' : ''}
+            ${index === items.length - 1 ? 'col-span-2 md:col-span-1 border-t md:border-t-0 border-white/8' : ''}
+            ${index > 0 ? 'md:border-l md:border-white/8' : ''}
+          `}
         >
-          <i className={`fas ${item.icon} text-red-600 text-sm`}></i>
+          <i className={`fas ${item.icon} text-red-500 text-sm`}></i>
           <span>
-            {item.text} <strong className="text-white font-semibold">{item.strong}</strong>
+            {item.text && `${item.text} `}<strong className="text-white font-semibold">{item.strong}</strong>
           </span>
         </div>
       ))}

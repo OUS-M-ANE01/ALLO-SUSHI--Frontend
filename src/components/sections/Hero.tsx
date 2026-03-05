@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.2 }}
         >
-          <img src="/gauche.png" alt="Sushi gauche" className="w-full h-full object-cover animate-[heroZoom_10s_ease-in-out_infinite_alternate]" />
+          <img src="/g-alloo.png" alt="Sushi gauche" className="w-full h-full object-cover animate-[heroZoom_10s_ease-in-out_infinite_alternate]" />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#faf8f4]"></div>
         </motion.div>
 
@@ -49,7 +49,7 @@ export const Hero: React.FC = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.2 }}
         >
-          <img src="/droite.png" alt="Sushi droite" className="w-full h-full object-cover animate-[heroZoom_10s_ease-in-out_infinite_alternate]" />
+          <img src="/d-alloo.png" alt="Sushi droite" className="w-full h-full object-cover animate-[heroZoom_10s_ease-in-out_infinite_alternate]" />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#faf8f4]"></div>
         </motion.div>
       </div>
@@ -80,28 +80,25 @@ export const Hero: React.FC = () => {
         </motion.div>
 
         {/* Images côte à côte */}
-        <div className="flex gap-3 px-4 pb-6 mt-2 h-[280px] sm:h-[340px]">
+        <div className="flex mt-3">
           <motion.div
-            className="flex-1 rounded-2xl overflow-hidden relative"
-            initial={{ x: -60, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.5 }}
+            className="flex-1 overflow-hidden h-[220px] sm:h-[280px]"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.5 }}
           >
-            <img src="/gauche.png" alt="Sushi gauche" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            <img src="/g-alloo.png" alt="Sushi gauche" loading="eager" decoding="async" className="w-full h-full object-cover" />
           </motion.div>
           <motion.div
-            className="flex-1 rounded-2xl overflow-hidden relative"
-            initial={{ x: 60, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.5 }}
+            className="flex-1 overflow-hidden h-[220px] sm:h-[280px]"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.6 }}
           >
-            <img src="/droite.png" alt="Sushi droite" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            <img src="/d-alloo.png" alt="Sushi droite" loading="eager" decoding="async" className="w-full h-full object-cover" />
           </motion.div>
         </div>
       </div>
     </>
   );
-};
 };
